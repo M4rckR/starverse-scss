@@ -1,0 +1,39 @@
+{
+  "name": "landing-star-wars",
+  "version": "1.0.0",
+  "description": "Landing de StarWars (Star verse)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4rckR/starverse-scss.git"
+  },
+  "keywords": [
+    "landing",
+    "star",
+    "wars",
+    "scss",
+    "padme",
+    "anaking",
+    "darth",
+    "vader"
+  ],
+  "author": "Marck Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4rckR/starverse-scss/issues"
+  },
+  "homepage": "https://github.com/M4rckR/starverse-scss#readme",
+  "dependencies": {
+    "landing-star-wars": "file:"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.0"
+  }
+}

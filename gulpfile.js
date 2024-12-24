@@ -7,6 +7,11 @@ const rename = require('gulp-rename');
 //Imagenes
 const imagemin = require('gulp-imagemin');
 
+// JavaScript
+const concat = require('gulp-concat');
+const terser = require('gulp-terser');
+
+
 async function css (done){
     src('src/scss/app.scss')        // Identificar el archivo
         .pipe(sass())               // Compilar SASS
@@ -15,7 +20,7 @@ async function css (done){
     done();
 }
 
-function cssBuild(done) {
+async function cssBuild(done) {
     src('build/css/app.css')        // Identificar el archivo
         .pipe(rename({
             suffix: '.min'
@@ -26,6 +31,16 @@ function cssBuild(done) {
         .pipe(dest('build/css'));   // Exportarlo o guardarlo en una ubicación
     done();
 }
+
+async function javascriptBs() {
+    return src([
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      'src/js/**/*.js'
+    ])
+      .pipe(concat('bundle.js'))
+      .pipe(terser())
+      .pipe(dest('build/js'));
+  }
 
 async function dev (){
     watch('src/scss/**/*.scss', css); // Vigilar los cambios en el archivo
@@ -44,4 +59,4 @@ exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
 exports.build = series(cssBuild);
-exports.default = series(imagenes, css, dev); // Ejecutar todas las tareas en serie
+exports.default = series(imagenes, css, dev, javascriptBs); // Ejecutar todas las tareas en serie

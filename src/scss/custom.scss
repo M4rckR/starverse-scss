@@ -1,3 +1,28 @@
+// Colores
+$humo : #f8f8f8;
+$oscuro: #000000;
+$amarillo: #ffcc00;
 
 
+// Fuentes
+$font-size-root: 62.5%;
+$font-size-base: 1.6rem;
+$dropdown-link-hover-bg:  $oscuro;
+$dropdown-link-hover-color: $amarillo;
+$dropdown-link-active-bg:  $oscuro;
+$dropdown-link-active-color: $amarillo;
+$nav-link-color:  $humo;
+$nav-link-hover-color:  $amarillo;
+$dropdown-padding-y:  0;
+$dropdown-item-padding-y: .8rem;
+$dropdown-item-padding-x: .8rem;
+$nav-link-font-weight: 700;
 
+
+//Tipografia
+$h1-font-size: 4.8rem;
+$h2-font-size: 2.8rem;
+$h3-font-size: 2.4rem;
+
+// Importar todo bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

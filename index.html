@@ -5,8 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarVerse</title>
     <link rel="icon" href="src/img/icon.png">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top m-4 ">
+        <div class="container-xl border bg-dark border-white rounded">
+          <a class="navbar-brand me-auto" href="#">
+            <img width="100" src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254" alt="logo star verse">
+          </a>
+
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">StarVerse</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-4 justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#">Conoce a tus personajes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Conocenos
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Nuestra pasion</a></li>
+                    <li><a class="dropdown-item" href="#">Nuestro club de Fans</a></li>
+                    <li><a class="dropdown-item" href="#">Novelas canonicas</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="btn btn-strong rounded me-2" href="#">Suscribete</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
+      <section class="hero">
+        <div class="container-xl py-5">
+            <div class="d-flex justify-content-between">
+                <h1 class="text-white fw-bold text-center titulo-pagina text-md-start">Explora la Galaxia: Conoce a los Personajes Icónicos de Star Wars</h1>
+                <img src="build/img/hero-imagen-character.png" alt="darth vader">
+            </div>
+            
+        </div>
+      </section>
+
+    <script src="build/js/bundle.js"></script>
 </body>
 </html>
